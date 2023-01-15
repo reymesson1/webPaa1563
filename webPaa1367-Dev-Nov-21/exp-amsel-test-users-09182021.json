@@ -1,0 +1,2 @@
+{"_id":{"$oid":"6141405f88fb353ea4baa2b3"},"username":"rmesson","password":"1234","firstname":"Rey","lastname":"Messon","email":"reymesson@gmail.com","__v":0}
+{"_id":{"$oid":"61461aed5e8e0811002a0252"},"username":"reymesson","password":"$2a$10$wXh05w/tn6CxqJkqAu36ZOPkbzf/pH78bJK6UWnxzh/C1IUamc.Ya","__v":0,"firstname":"Rey","lastname":"Messon","email":"reymesson@gmail.com"}

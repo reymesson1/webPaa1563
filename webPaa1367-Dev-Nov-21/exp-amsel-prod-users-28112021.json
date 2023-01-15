@@ -1,0 +1,4 @@
+{"_id":{"$oid":"6141405f88fb353ea4baa2b3"},"username":"rmesson","password":"1234","firstname":"Rey","lastname":"Messon","email":"reymesson@gmail.com","__v":0}
+{"_id":{"$oid":"61461aed5e8e0811002a0252"},"username":"reymesson","password":"$2a$10$wXh05w/tn6CxqJkqAu36ZOPkbzf/pH78bJK6UWnxzh/C1IUamc.Ya","__v":0,"firstname":"Rey","lastname":"Messon","email":"reymesson@gmail.com"}
+{"_id":{"$oid":"614f6ff7910a72fad133fb21"},"username":"amsel","password":"$2a$10$h8mXoDdax09YhFhe3bz4Pe88ir04F9.C.5QMH65KQfFhfDfHNbIOe","firstname":"Amsel","lastname":"eCatalog","email":"amsel@gmail.com","__v":0}
+{"_id":{"$oid":"619ceec1e47d101d99bdb4bd"},"username":"juan","password":"$2a$10$A7HILC1JsebnQj/9mU95MevkLVy1a8fNpCow2QX5xZHWOFhCIOeS2","firstname":"juan","lastname":"juan","email":"juan@juan.com","__v":0}

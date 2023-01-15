@@ -1,0 +1,7 @@
+{"_id":{"$oid":"610e804a1dd91313a8375827"},"id":"1628340298582","description":"prueba8","price":"1000","company":"Company1","style":"Style1","category":"Bracelet","image":"prueba8-Style1.jpg","__v":0}
+{"_id":{"$oid":"610e85b40ef52c0ab0d5212d"},"id":"1628341684939","description":"testProduct","price":"1000","company":"Company1","style":"Style1","category":"Bracelet","image":"testProduct-Style1.jpg","__v":0}
+{"_id":{"$oid":"610e892cf22aac1064cbfa2b"},"id":"1628342572463","description":"ringsProduct","price":"1000","company":"Company1","style":"Style1","category":"Rings","image":"ringsProduct-Style1.jpg","__v":0}
+{"_id":{"$oid":"610e8e23ca0fea2240855b4e"},"id":"1628343843698","description":"proeuab12","price":"10000","company":"Company1","style":"Style1","category":"Necklace","image":"proeuab12-Style1.jpg","__v":0}
+{"_id":{"$oid":"610e8f8cd42c9d43cc728b89"},"id":"1628344204115","description":"pendantProduct1","price":"10000","company":"Company1","style":"Style1","category":"Pendant","image":"pendantProduct1-Style1.jpg","__v":0}
+{"_id":{"$oid":"610e90633035bc415c40f9a1"},"id":"1628344419416","description":"crownsProduct","price":"1000","company":"Company1","style":"Style1","category":"Crowns","image":"crownsProduct-Style1.jpg","__v":0}
+{"_id":{"$oid":"610e90a53035bc415c40f9ac"},"id":"1628344485882","description":"gemsProduct","price":"1000","company":"Company1","style":"Style1","category":"Gems","image":"gemsProduct-Style1.jpg","__v":0}
