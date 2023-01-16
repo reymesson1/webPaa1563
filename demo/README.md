@@ -2,4 +2,3 @@
 
 Reactjs
 
-Jugueteria
