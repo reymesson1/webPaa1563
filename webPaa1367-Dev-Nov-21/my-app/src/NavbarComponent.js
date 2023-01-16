@@ -70,8 +70,7 @@ class NavbarComponent extends Component {
             {/* <Navbar style={{'background-color':'#0c343d','height':'150px','color':'#000000'}}> */}
             <Navbar style={{'height':'150px','color':'#000000'}}>
                 <div className="col-md-3">
-                    <div style={{'color':'#ffffff', 'font-size':'36px'}} href="/"> Amsel </div>
-                    <div style={{'color':'#ef8d09', 'font-size':'16px'}} href="/"> eCatalog </div>
+                    <img src={this.props.URLExternal+"/images/"+'logo.png'} style={{"width":"35%","height":"35%","margin-left":"30%"}}  /> 
                 </div>
                 <div className="col-md-5">
                     {/* <Input type="text" onChange={props.search.bind(this)} placeholder="Seach" /> */}

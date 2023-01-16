@@ -26,7 +26,8 @@ class CategoryComponent extends Component {
             debit: "",
             credit: "",
             notes: "",
-            transactions: []
+            transactions: [],
+            balance: 0.00
         }       
         
         this.handleBlur = this.handleBlur.bind(this);
@@ -35,12 +36,26 @@ class CategoryComponent extends Component {
 
     componentDidMount(){
 
+
         fetch(this.props.URLExternal+'/transactions')
         .then((response)=>response.json())
         .then((responseData)=>{
+            let balance = 0
+            let credit = 0
             console.log(responseData);
+            let filteredData = responseData.filter(
+
+                (data, index) => data.creator.indexOf(localStorage.getItem('sub')) !== -1
+            );
+            filteredData.forEach( (value,key) => {
+
+                balance += value.debit
+                credit += value.credit
+
+            })
             this.setState({
-                transactions: responseData
+                transactions: responseData,
+                balance: balance - credit
             })
         })
         .catch((error)=>{
@@ -137,7 +152,10 @@ class CategoryComponent extends Component {
 
     render() {
 
-        let filteredData = this.state.transactions
+        let filteredData = this.state.transactions.filter(
+
+            (data, index) => data.creator.indexOf(localStorage.getItem('sub')) !== -1
+        );
 
         return(
             <div className="container">
@@ -208,11 +226,16 @@ class CategoryComponent extends Component {
                     {/* <Input type="text" placeholder="Search" ></Input> */}
                     <Card style={{'width':'100%'}}>
                         <CardBody>
-                            {/* <CardTitle tag="h5">Card title</CardTitle> */}
-                            {/* <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle> */}
-                        </CardBody>
-                        <CardBody>
-                            <Input type="text" onChange={this.onChangeField.bind(this)} placeholder="Search" ></Input>
+                            <div className='row'>
+                                <div className='col-md-4'></div>
+                                <div className='col-md-8'>
+                                    <h1>Balance: $ {this.state.balance.toFixed(2)}</h1>
+                                </div>
+                            </div>
+
+                            <div className='row'>
+                                <Input type="text" onChange={this.onChangeField.bind(this)} placeholder="Search" ></Input>
+                            </div>
                         </CardBody>
                     </Card>
                 </div>

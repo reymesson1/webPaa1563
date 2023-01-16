@@ -129,7 +129,7 @@ exports.setLogin = async(req,res)=>{
     var userData = obj;
     var user = await User.findOne({username: userData.username});
 
-    console.log(!user);
+    console.log(user);
 
     if(!user){
         return res.status(401).send({message: 'Email or Password Invalid'})
@@ -149,7 +149,11 @@ exports.setLogin = async(req,res)=>{
 
         console.log(token);
 
-        res.status(200).send({"token":token,"sub": user._id});
+        var response = {"token":token,"sub": user._id}
+
+        console.log(response)
+
+        res.status(200).send(response);
         // res.status(200).send(req.body)
     })
 
